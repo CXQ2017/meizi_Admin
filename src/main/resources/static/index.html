@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="bootstrap-3.3.7/docs/favicon.ico">
+
+    <title>媒资审核管理</title>
+
+    <link href="bootstrap-3.3.7/docs/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7/docs/examples/signin/signin.css" rel="stylesheet">
+    <script src="bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js"></script>
+    <script src="bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+
+    <link href="bootstrap-3.3.7/docs/examples/jumbotron/jumbotron.css" rel="stylesheet">
+
+    <style>
+        body{
+            margin-left:auto;
+            margin-right:auto;
+            margin-TOP:100PX;
+            width:20em;
+        }
+    </style>
+</head>
+<head>
+<title>媒资审核</title>
+<link
+	href="css/angular-bootstrap.css"
+	rel="stylesheet">
+</head>
+
+<body ng-app="hello" ng-cloak class="ng-cloak" >
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid" style="text-align: center">
+            <a class="navbar-brand"  href="#/">媒资审核</a>
+        </div>
+
+</nav>
+    <div >
+        <!--<li ng-show="!authenticated" ng-class="{active:nav.tab('navigation')}"><a href="#/login">登录</a></li>-->
+       <li class="form-group" style="text-shadow: black 5px 3px 3px; margin-bottom:50px;" ><span class="glyphicon " style="color: rgb(124, 175, 251); font-size: 50px;">媒资登录</span></li>
+        <form class="form-horizontal" role="form" action="/login" method="post">
+
+                <div class="form-group" style="width: auto">
+                    <label for="category" class="col-sm-2 control-label" style="width: auto">类别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <select class="form-control" style="width: auto" id="category" name="category">
+                        <option>系统管理员</option>
+                        <option>个人用户</option>
+                        <option>超级管理员</option>
+                    </select>
+                </div>
+
+
+
+
+
+            <div class="form-group" style="width: auto">
+                <label for="name" class="col-sm-2 control-label" style="width: auto">用户名</label>
+                <div class="col-sm-10" style="width: auto">
+                    <input type="text" class="form-control" id="name" name="name"
+                           placeholder="请输入名用户名">
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="password" class="col-sm-2 control-label" style="width: auto">密码&nbsp;&nbsp;&nbsp;</label>
+                <div class="col-sm-10" style="width: auto">
+                    <input type="text" class="form-control" id="password" name="password"
+                           placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <button type="submit" class="btn btn-primary">登录</button>
+                        </label>
+                        <label>
+                            <button type="button" class="btn btn-primary">重置</button>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
